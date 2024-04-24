@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from '../NavBar/NavBar';
 import { Layout } from 'antd';
-import './Layout.css';
 import 'antd/dist/reset.css';
 import Footer from "../Footer/Footer";
 
