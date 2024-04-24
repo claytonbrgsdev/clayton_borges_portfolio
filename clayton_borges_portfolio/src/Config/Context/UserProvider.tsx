@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import { UserContext } from './userContext';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectCurrentUser, updateUser } from '../../Config/Redux/Slices/authSlice'
+import { selectCurrentUser, updateUser } from '../Redux/Slices/authSlice'
 import { User } from '../../Types/user'
 
 interface UserProviderProps {
