@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction, createAction } from '@reduxjs/toolkit';
 import { query, where, collection, getDocs, doc, getDoc, updateDoc, FirestoreError } from 'firebase/firestore';
-import { db } from  '../../Configuration/firebase'
-import type { RootState } from '../store';
+import { db } from '../../Firebase/firebase'
+import type { RootState } from '../Store/store'
 
 
 export type ProductItem = {
