@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { User } from '../../Types/user'
+import { User } from '../../../Types/user'
 
 type UserContextType = {
   user: User | null;
