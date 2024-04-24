@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { store, persistor } from '../../Config/Redux/Store/store'
 import { PersistGate } from 'redux-persist/integration/react';
 import { createRoot } from 'react-dom/client';
-
+import { UserProvider } from '../Context/UserProvider'
 import App from '../App/App';
 
 
@@ -15,7 +15,9 @@ if (root) {
     <React.StrictMode>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <App />
+          <UserProvider>
+            <App />
+          </UserProvider>
         </PersistGate>
       </Provider>
     </React.StrictMode>,
